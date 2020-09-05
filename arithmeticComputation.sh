@@ -43,3 +43,12 @@ done
 
 echo reading from dictionary to array
 echo ${arr[@]}
+
+echo sorting in descending order
+
+for val in ${arr[@]}
+do
+    echo $val
+done | sort -nr 
+
+
