@@ -33,3 +33,13 @@ i=$(($i+1))
 
 echo storing in dictionary
 echo ${dictionary[@]}
+
+i=0
+for value in ${dictionary[@]}
+do
+	arr[$i]=$value
+	i=$(($i+1))
+done
+
+echo reading from dictionary to array
+echo ${arr[@]}
